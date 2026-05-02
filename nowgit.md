@@ -15,10 +15,12 @@
 
 | Page | URL | Status |
 |------|-----|--------|
-| Landing Page | https://asunnyboy861.github.io/Doze/ | ⏳ Pending |
-| Support | https://asunnyboy861.github.io/Doze/support.html | ⏳ Pending |
-| Privacy Policy | https://asunnyboy861.github.io/Doze/privacy.html | ⏳ Pending |
-| Terms of Use | https://asunnyboy861.github.io/Doze/terms.html | ⏳ Pending |
+| Landing Page | https://asunnyboy861.github.io/Doze/ | ✅ Active |
+| Support | https://asunnyboy861.github.io/Doze/support.html | ✅ Active |
+| Privacy Policy | https://asunnyboy861.github.io/Doze/privacy.html | ✅ Active |
+| Terms of Use | https://asunnyboy861.github.io/Doze/terms.html | ✅ Active |
+
+**Note**: Terms of Use required for IAP subscription apps.
 
 ## Repository Structure
 
@@ -40,6 +42,8 @@ Doze/
 │   ├── support.html
 │   ├── privacy.html
 │   └── terms.html
+├── .github/workflows/           # GitHub Actions
+│   └── deploy.yml               # Deploys /docs to GitHub Pages
 ├── us.md                        # English Development Guide
 ├── keytext.md                   # App Store Metadata
 ├── capabilities.md              # Capabilities Configuration
@@ -47,3 +51,10 @@ Doze/
 ├── price.md                     # Pricing Configuration
 └── nowgit.md                    # This File
 ```
+
+## Deployment Information
+
+- **GitHub Pages Source**: `/docs` folder on `main` branch
+- **Deployment Method**: GitHub Actions (automatic on push to main)
+- **Last Deployment**: 2026-05-02
+- **Workflow File**: `.github/workflows/deploy.yml`
